@@ -20,11 +20,6 @@
 
 </head>
 <body>
-	<!-- wow.js -->
-    <script src="js/wow.js"></script>
-    <script>
-    	new WOW().init();
-    </script>
 	<nav class="nav">
 		<ul class="nav__list">
 			<li class="nav__list-item"><a class="nav__link" href="#"><i class="fas fa-home"></i> Inicio</a></li>
@@ -46,8 +41,8 @@
 
 	<div class="container">
 		<div class="section line">
-			<i class="fas fa-concierge-bell grande-icon"></i>
-			<div class="section__cont ">
+			<i class="fas fa-concierge-bell grande-icon wow animate__animated animate__bounceInLeft animate__slow"></i>
+			<div class="section__cont animate__animated wow animate__bounceInLeft animate__slow">
 				<h2 class="section__title">Sobre nosotros</h2>
 				<p class="section__text">Somos un excelente hotel para su hospedaje, donde encontrarás un servicio de calidad, armonía y exclusividad, con una atención impecable desde su llegada a nuestras instalaciones, para así cumplir las expectativas de nuestros huéspedes haciendo de su estadía una experiencia inolvidable. Ven y disfruta de manera placentera al mejor estilo del Gran Hotel San Cristóbal Suite</p>
 			</div>
@@ -99,19 +94,19 @@
 		<div class="service">
 			
 
-			<div class="service__card">
+			<div class="service__card wow animate__animated animate__bounceInLeft animate__slower animate__delay-2s animate__faster">
 				<h3 class="service__title"><i class="fas fa-pizza-slice"></i> Pizzeria</h3>
 				<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sequi ea possimus alias veritatis nobis repellat, corporis nulla quas voluptatum consequatur eos animi soluta, error cum cupiditate quisquam? Incidunt, aperiam, mollitia!</p>
 				<img class="img-small" src="img/terraza.jpg" alt="terraza">
 			</div>
 
-			<div class="service__card">
+			<div class="service__card wow animate__animated animate__bounceInLeft animate__slower animate__delay-3s animate__faster">
 				<h3 class="service__title"><i class="fas fa-taxi"></i> Estacionamiento</h3>
 				<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sequi ea possimus alias veritatis nobis repellat, corporis nulla quas voluptatum consequatur eos animi soluta, error cum cupiditate quisquam? Incidunt, aperiam, mollitia!</p>
 				<img class="img-small" src="img/estacionamiento.jpg" alt="estacionamiento">
 			</div>
 
-			<div class="service__card">
+			<div class="service__card wow animate__animated animate__bounceInLeft animate__slower animate__delay-4s animate__faster">
 				<h3 class="service__title"><i class="fas fa-utensils"></i> Restaurante</h3>
 				<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Sequi ea possimus alias veritatis nobis repellat, corporis nulla quas voluptatum consequatur eos animi soluta, error cum cupiditate quisquam? Incidunt, aperiam, mollitia!</p>
 				<img class="img-small" src="img/restaurante.jpg" alt="restaurante">
@@ -141,8 +136,14 @@
 		</div>
 
 		<footer class="footer">
-			<p><i class="far fa-copyright"></i> Omar Mendoza 2021-2022</p>
+			<p class="wow animate__animated animate__bounceInUp"><i class="far fa-copyright"></i> Omar Mendoza 2021-2022</p>
 		</footer>
 	</div>
+
+		<!-- wow.js -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
 </body>
 </html>

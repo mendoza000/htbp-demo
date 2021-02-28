@@ -183,7 +183,8 @@ body{
 
 .img-small{
 	height: 200px;
-	width: 100%
+	width: 100%;
+	border-radius: 4px
 }
 
 .service{
@@ -206,7 +207,7 @@ body{
 }
 
 .footer{
-	padding: 1.7em;
+	padding: 1em;
 	text-align: center;
 	font-size: 1.4em;
 	background-color: #222f3e;
@@ -218,6 +219,14 @@ body{
 	font-size: 1.4em;
 	text-decoration: none;
 	color:#222f3e;
+}
+.center:hover{
+	transform: scale(1.1);
+	transition: 0.7s;
+}
+.center:not(:hover){
+	transform: scale(1.0);
+	transition: 0.7s;
 }
 .center-p{
 	padding-top: 1em
