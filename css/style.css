@@ -1,8 +1,10 @@
-
+:root{
+	--blanco: #fff;
+}
 
 body{
 	font-family: 'Roboto', sans-serif;
-	background-color: #fff;
+	background-color: var(--blanco);
 	color: #222f3e;
 	margin: 0;
 	padding: 0;
@@ -123,11 +125,13 @@ body{
 	color:white;
 	border-radius: 10px;
 	align-items:center;
-	max-width: 20em;
-	min-width: 20em;
+	max-width: 23em;
+	min-width: 23em;
+	margin: 0 1em;
 	position: relative;
     display: inline-block;
     text-align: center;
+    box-shadow: 4px 1px 10px #222f3e;
 
 }
 .card:hover{
@@ -177,7 +181,7 @@ body{
 }*/
 
 .bg-fff{
-	background-color:#FFF;
+	background-color:var(--blanco);
 	color: #222f3e;
 }
 
