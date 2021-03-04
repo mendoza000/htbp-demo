@@ -304,6 +304,8 @@ body{
 
 	.nav__list{
 		padding-inline-start: 0px;
+		min-width: 300px;
+		max-width: 300px;
 	}
 	.service-card{
 		min-width: 300px;
