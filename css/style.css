@@ -23,6 +23,7 @@ body{
 .nav__list{
 	display: flex;
 	justify-content: space-between;
+	padding-left: 0;
 }
 .nav__link{
 	text-decoration: none;
@@ -299,12 +300,11 @@ body{
 	padding: 0.5em;
 	border-radius: 7px;
 	margin-left: 5px;
-	font-size: 14px
+	font-size: 10px
 	}
 
 	.nav__link{
 		display: flex;
-		font-size: 12px;
 		padding: 10px 0;
 	}
 
