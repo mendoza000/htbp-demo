@@ -290,7 +290,7 @@ body{
 @media screen and (max-width: 600px){
 
 	.nav{
-		margin-left: -20px
+	margin-left: -20px
 	}
 	.nav__list-item{
 	padding: 0.5em;
@@ -329,4 +329,12 @@ body{
 	.footer{
 		padding: 0.5em;
 	}
+}
+
+@media screen and (max-width: 350px){
+
+	.nav{
+	margin-left: -35px
+	}
+
 }
