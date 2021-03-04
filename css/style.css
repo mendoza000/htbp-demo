@@ -1,5 +1,6 @@
 :root{
 	--blanco: #fff;
+	--gris: #222f3e;
 }
 
 body{
@@ -8,6 +9,7 @@ body{
 	color: #222f3e;
 	margin: 0;
 	padding: 0;
+	width: 100%	
 }
 
 .nav{
@@ -42,7 +44,8 @@ body{
 }
 
 .header{
-	padding: 12em;
+	max-width: 100%;
+	padding: 12em 0;
 	background-image: url("../img/header.jpg");
 	background-size: cover;
 	color: #fff;
@@ -68,11 +71,39 @@ body{
 	margin: 2em;
 }*/
 
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--gris);
+	color: #fff;
+	padding: 7em;
+	justify-content: space-around;
+}
+
+.about-text{
+	min-width: 400px;
+	max-width: 400px;
+	font-size: 18px;
+}
+.icon{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.icon-icon{
+	font-size: 12em
+}
+.icon-title{
+	font-size: 22px;
+	text-align: center;
+}
+
 .section{
 	display: flex;
 	justify-content: space-around;
-	padding: 9em;
-	margin: auto;
+	width: 100%;
+	padding-top: 9em;
+	padding-bottom: 9em;
 	background-color: #222f3e;
 	color: white;
 }
@@ -80,14 +111,15 @@ body{
 	font-size: 2em;
 	line-height: 2em;
 	text-align: center;
-	margin-left: 8em;
 }
 .section__text{
-	margin: 0 2em 0 20em;
+	width: 30%;
+	text-align: right;
 }
 .grande-icon{
 	font-size: 12em;
 	margin:auto;
+	padding: 0 15%
 }
 
 .img-habi{
@@ -120,6 +152,12 @@ body{
 	margin-top: -15em;
 }
 
+.container-card{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 .card{
 	background-color: #222f3e;
 	color:white;
@@ -127,7 +165,7 @@ body{
 	align-items:center;
 	max-width: 23em;
 	min-width: 23em;
-	margin: 0 1em;
+	margin: 2em 0em;
 	position: relative;
     display: inline-block;
     text-align: center;
@@ -193,6 +231,8 @@ body{
 
 .service{
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	padding: 6em;
 	background-color: #222f3e;
@@ -203,8 +243,9 @@ body{
 	align-items: center;
 	margin: 0 1em;
 	border-left: 2px solid #4f98f0;
-	padding: 0 1em
-	
+	padding: 0 1em;
+	max-width: 310px;
+	margin-top: 1em;
 }
 .service__title{
 	line-height: 3em;
@@ -240,35 +281,26 @@ body{
 	padding-bottom: 5em
 }
 
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
 @media screen and (max-width: 500px){
-	.header{
-		width: 100%;
-		margin: auto
-	}
-	.nav{
-		width: 120vh;
-		margin: auto;
+
+	.nav__list-item{
+	padding: 0.5em;
+	border-radius: 7px;
+	margin-left: 0.5em;
 	}
 
-	.section{
-		width: 78.6vh;
-		margin: auto;
-		justify-content: space-between;
+	.nav__list{
+		justify-content: center;
 	}
-	.grande-icon{
-	font-size: 6em;
-	margin:auto;
+	.service-card{
+		min-width: 400px;
+		max-width: 400px;
 	}
-
-	.section__text{
-	margin: 0 2em 0 5em;
-}
-
-	.section__title{
-	line-height: 2em;
-	text-align: center;
-	margin-left: -1em 
-
-}
 
 }
