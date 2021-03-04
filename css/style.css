@@ -302,6 +302,12 @@ body{
 	font-size: 14px
 	}
 
+	.nav__link{
+		display: flex;
+		font-size: 12px;
+		padding: 10px 0;
+	}
+
 	.nav__list{
 		padding-inline-start: 0px;
 		min-width: 300px;
