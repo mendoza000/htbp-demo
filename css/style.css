@@ -157,6 +157,12 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
+	/*display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(2, auto);
+	grid-gap: 2em;
+	justify-content: center;*/
 }
 
 .card{
@@ -166,13 +172,14 @@ body{
 	align-items:center;
 	max-width: 23em;
 	min-width: 23em;
-	margin: 2em 0em;
+	margin: 2em 2em;
 	position: relative;
     display: inline-block;
     text-align: center;
     box-shadow: 4px 1px 10px #222f3e;
 
 }
+
 .card:hover{
 	transform: scale(1.1);
 	transition: 0.7s;
@@ -200,6 +207,9 @@ body{
 	transform: scale(1.0);
 	transition: 0.7s
 }
+/*.card:nth-child(5){
+	grid-column: 3/4
+}*/
 .card__title{
 	text-align: center;
 	font-size: 1.5em;
@@ -288,12 +298,14 @@ body{
 	flex-direction: row;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 
 	.nav{
 	padding-right: 0.2em;
 	padding-left: 0.2em;
 	position: relative;
+	display: flex;
+	justify-content: center;
 
 	}
 	.nav__list-item{
@@ -347,4 +359,11 @@ body{
 	transition: 0.7s;
 
 	}
+
+	/*.container-card{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}*/
 }
